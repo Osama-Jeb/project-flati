@@ -1,0 +1,50 @@
+footer {
+    .footer-top {
+        height: auto;
+        padding: 30px;
+        background-color: $dark-blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+
+        .footer-links {
+            display: flex;
+            margin: 0;
+            padding: 0;
+
+            @media (min-width: 375px) and (max-width: 425px) {
+                * {
+                    padding: 0;
+                }
+            }
+
+            a {
+                color: #afadad8c;
+                text-decoration: none;
+                padding: 10px;
+            }
+        }
+
+        div {
+            * {
+                padding: 20px;
+            }
+
+            h4,
+            p {
+                color: rgba(255, 255, 255, 0.479);
+            }
+
+        }
+    }
+
+    .copyright {
+        background-color: $flati-gray;
+        height: 9vh;
+        text-align: center;
+        padding: 20px;
+        color: gray;
+    }
+}

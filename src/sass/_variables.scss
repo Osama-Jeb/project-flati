@@ -1,0 +1,14 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+$flati-gray: #363B47;
+$dark-blue: #3676BB;
+$light-beige: #E8E6E0;
+
+$custom-colors: (
+    "flati" : $flati-gray,
+    "dark-blue" : $dark-blue,
+    "light-beige" : $light-beige
+);
+
+$theme-colors : map-merge($theme-colors , $custom-colors);
