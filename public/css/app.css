@@ -11035,6 +11035,12 @@ li:hover a {
     display: none;
   }
 }
+@media (min-width: 2560px) {
+  * {
+    font-size: 35px;
+  }
+}
+
 main .bg-img {
   background-image: url("../img/bg-header.png");
   height: 40vh;
@@ -11086,8 +11092,23 @@ main .cards .card {
     width: 90%;
   }
 }
-main .cards .card img {
+main .cards .card div {
+  height: 50px;
+  width: 50px;
+  background-color: white;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .cards .card div i {
+  color: #174899;
+  animation: spin 4s infinite ease-in-out;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg) rotateX(360deg);
+  }
 }
 main .work {
   display: flex;
@@ -11133,11 +11154,22 @@ main .work .work-images {
     align-items: center;
   }
 }
+main .work .work-images .cata:hover {
+  animation: rot 3s infinite ease-in-out;
+}
+@keyframes rot {
+  100% {
+    transform: rotateY(360deg);
+  }
+}
 @media (min-width: 375px) and (max-width: 425px) {
   main .work .work-images .cata {
     width: 212px;
     margin-top: 20px;
   }
+}
+main .work .work-images .cata img {
+  width: 100%;
 }
 main .work .work-images .cata div {
   background-color: #363B47;
